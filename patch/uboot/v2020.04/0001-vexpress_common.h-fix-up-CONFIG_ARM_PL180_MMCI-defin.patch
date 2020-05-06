@@ -1,0 +1,26 @@
+From 45ff72b25383ecd3d1f5fd1c65b63402a2612145 Mon Sep 17 00:00:00 2001
+From: Wu Zhangjin <wuzhangjin@gmail.com>
+Date: Wed, 6 May 2020 16:13:46 +0800
+Subject: [PATCH] vexpress_common.h: fix up CONFIG_ARM_PL180_MMCI definition
+
+Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+---
+ include/configs/vexpress_common.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/vexpress_common.h b/include/configs/vexpress_common.h
+index e73658a..ad15e6a 100644
+--- a/include/configs/vexpress_common.h
++++ b/include/configs/vexpress_common.h
+@@ -138,7 +138,7 @@
+ #define CONFIG_SYS_SERIAL0		V2M_UART0
+ #define CONFIG_SYS_SERIAL1		V2M_UART1
+ 
+-#define CONFIG_ARM_PL180_MMCI
++#define CONFIG_ARM_PL180_MMCI		1
+ #define CONFIG_ARM_PL180_MMCI_BASE	V2M_MMCI
+ #define CONFIG_SYS_MMC_MAX_BLK_COUNT	127
+ #define CONFIG_ARM_PL180_MMCI_CLOCK_FREQ 6250000
+-- 
+2.7.4
+
